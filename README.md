@@ -18,13 +18,13 @@ Vue.use(vueFeature,config)
 ```
 
 ```html
-// In template
+<! –– In template ––>
 <div v-feature:specific-feature-toggle>
-// some content
 </div>
 ```
 
 ```js
+// in js, example in vue's mounted lifecycle hook
 mounted(){
   this.$feature('specific-feature-toggle') ? this.dothis() : this.doThat()
 }
