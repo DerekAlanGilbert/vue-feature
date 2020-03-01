@@ -9,9 +9,9 @@ export default {
 			}
 		})
 
-		Vue.prototype.$feature = function(feature, callback) {
+		Vue.prototype.$feature = function(feature) {
 			const featureIsEnabled = featureConfig[feature]['status']
-			callback(featureIsEnabled)
+			return featureIsEnabled
 		}
 	}
 }
