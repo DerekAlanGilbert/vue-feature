@@ -1,6 +1,6 @@
 {
   "name": "@derekalangilbert/vue-feature",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "main": "dist/vueFeature.common.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
