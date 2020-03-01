@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img v-feature:can-see-vue-logo width="25%" src="./assets/logo.png">
+    <h1 v-feature:can-see-vue-logo>A Feature toggle is letting you see this heading</h1>
     <ul>
       <li v-for="(item, index) in data" :key="index">
         <pre>
@@ -16,13 +16,10 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "App",
   created() {
-    this.$feature("can-use-users-api-v1", this.handleFeatureProcess);
+    this.$feature("can-use-users-api-v1") ?  this.getDataV1() : this.getDataV2()
   },
   methods: {
     ...mapActions("demo", ["getDataV1", "getDataV2"]),
-    handleFeatureProcess(isFeatureEnabled) {
-      return isFeatureEnabled ? this.getDataV1() : this.getDataV2();
-    }
   },
   computed: {
     ...mapGetters("demo", ["data", "user"])
