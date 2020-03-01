@@ -2,9 +2,11 @@
   "name": "@derekalangilbert/vue-feature",
   "version": "0.1.0",
   "main": "dist/vueFeature.common.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
-    "url":"git://github.com/derekalangilbert/vue-feature.git"
+    "url": "git://github.com/derekalangilbert/vue-feature.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve",

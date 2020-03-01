@@ -18,7 +18,6 @@ Vue.use(vueFeature,config)
 ```
 
 ```html
-<! –– In template ––>
 <div v-feature:specific-feature-toggle>
 </div>
 ```
