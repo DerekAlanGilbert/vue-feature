@@ -19,8 +19,6 @@ export default {
 	},
 	actions: {
 		getDataV1({ commit }) {
-			console.log('v1')
-
 			fetch('https://jsonplaceholder.typicode.com/todos')
 				.then(response => response.json())
 				.then(json => {
@@ -28,7 +26,6 @@ export default {
 				})
 		},
 		getDataV2({ commit }) {
-			console.log('v2')
 			fetch(' https://jsonplaceholder.typicode.com/users')
 				.then(response => response.json())
 				.then(json => {
