@@ -35,3 +35,4 @@ mounted(){
   this.$feature('specific-feature-toggle') ? this.dothis() : this.doThat()
 }
 ```
+
