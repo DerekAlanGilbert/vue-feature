@@ -31,6 +31,5 @@ jobs:
         with:
           name: my-artifact
           path: path/to/artifact
-
       env:
         CI: true
