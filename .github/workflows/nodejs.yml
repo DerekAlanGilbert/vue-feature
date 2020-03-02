@@ -19,6 +19,18 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build:lib --if-present
-    - run: npm test
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - run: mkdir -p path/to/artifact
+
+      - run: echo hello > path/to/artifact/world.txt
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: my-artifact
+          path: path/to/artifact
+
       env:
         CI: true
